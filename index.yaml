@@ -9,6 +9,6 @@ entries:
     name: emojivoto
     type: application
     urls:
-    - https://github.com/phenderson-d2iq/emojivoto-chart/emojivoto-11.tgz
+    - https://phenderson-d2iq.github.io/emojivoto-chart/emojivoto-11.tgz
     version: "11"
 generated: "2022-12-02T20:37:53.737199009-06:00"
