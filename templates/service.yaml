@@ -1,6 +1,6 @@
 {{- if .Values.service.enabled -}}
 {{- $edns := .Values.externalDNS.enabled }}
-{{- $ednt := .Values.externalDNS.ttl | int | quote }}
+{{- $ednt := .Values.externalDNS.ttl | quote }}
 {{- $ednh := .Values.externalDNS.hostname | quote }}
 
 ---
