@@ -1,0 +1,24 @@
+# Default values for flix-server.
+# This is a YAML-formatted file.
+
+nameOverride: ""
+
+fullnameOverride: ""
+
+
+emojiReplicaCount: 
+
+votebotReplicaCount: 
+
+votingReplicaCount: 
+
+webReplicaCount: 
+
+# If you have enabled external-dns with your kommander install you can enable automatic DNS registration for your services
+externalDNS:
+  enabled: 
+  ttl: 
+  hostname: 
+
+service:
+  enabled: true
