@@ -2,11 +2,9 @@
 
 emojiReplicaCount: 1
 
-votebotReplicaCount: 1
-
-votingReplicaCount: 1
-
 webReplicaCount: 1
+
+votebotReplicaCount: 1
 
 injectLinkerd:
   enabled: false

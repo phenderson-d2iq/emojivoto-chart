@@ -92,7 +92,7 @@ metadata:
   name: voting
 #  namespace: emojivoto
 spec:
-  replicas: {{ .Values.votingReplicaCount }}
+  replicas: 1
   selector:
     matchLabels:
       app: voting-svc
