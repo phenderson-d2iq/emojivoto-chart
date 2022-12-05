@@ -1,3 +1,6 @@
+{{- $lkrd := .Values.injectLinkerd.enabled }}
+
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -19,6 +22,10 @@ spec:
       labels:
         app: emoji-svc
         version: v11
+{{- if $lkrd }}
+      annotations:
+        linkerd.io/inject: enabled
+{{- end }}
     spec:
       containers:
       - env:
@@ -58,6 +65,10 @@ spec:
       labels:
         app: vote-bot
         version: v11
+{{- if $lkrd }}
+      annotations:
+        linkerd.io/inject: enabled
+{{- end }}
     spec:
       containers:
       - command:
@@ -91,6 +102,10 @@ spec:
       labels:
         app: voting-svc
         version: v11
+{{- if $lkrd }}
+      annotations:
+        linkerd.io/inject: enabled
+{{- end }}
     spec:
       containers:
       - env:
@@ -130,6 +145,10 @@ spec:
       labels:
         app: web-svc
         version: v11
+{{- if $lkrd }}
+      annotations:
+        linkerd.io/inject: enabled
+{{- end }}
     spec:
       containers:
       - env:
@@ -150,4 +169,3 @@ spec:
           requests:
             cpu: 100m
       serviceAccountName: web
-

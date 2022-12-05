@@ -6,17 +6,20 @@ nameOverride: ""
 fullnameOverride: ""
 
 
-emojiReplicaCount: 
+emojiReplicaCount: 1
 
-votebotReplicaCount: 
+votebotReplicaCount: 1
 
-votingReplicaCount: 
+votingReplicaCount: 1
 
-webReplicaCount: 
+webReplicaCount: 1
+
+injectLinkerd:
+  enabled: false
 
 # If you have enabled external-dns with your kommander install you can enable automatic DNS registration for your services
-externalDNS:
-  enabled: 
+externalDNS: 
+  enabled: false
   ttl: 
   hostname: 
 
