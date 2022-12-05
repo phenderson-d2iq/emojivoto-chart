@@ -1,10 +1,4 @@
-# Default values for flix-server.
 # This is a YAML-formatted file.
-
-nameOverride: ""
-
-fullnameOverride: ""
-
 
 emojiReplicaCount: 1
 
