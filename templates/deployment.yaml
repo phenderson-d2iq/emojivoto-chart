@@ -22,6 +22,7 @@ spec:
       labels:
         app: emoji-svc
         version: v11
+        appstack: emojivoto
 {{- if $lkrd }}
       annotations:
         linkerd.io/inject: enabled
@@ -65,6 +66,7 @@ spec:
       labels:
         app: vote-bot
         version: v11
+        appstack: emojivoto
 {{- if $lkrd }}
       annotations:
         linkerd.io/inject: enabled
@@ -102,6 +104,7 @@ spec:
       labels:
         app: voting-svc
         version: v11
+        appstack: emojivoto
 {{- if $lkrd }}
       annotations:
         linkerd.io/inject: enabled
@@ -145,6 +148,7 @@ spec:
       labels:
         app: web-svc
         version: v11
+        appstack: emojivoto
 {{- if $lkrd }}
       annotations:
         linkerd.io/inject: enabled
